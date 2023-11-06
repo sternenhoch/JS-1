@@ -1,7 +1,10 @@
 
-function drawTriangle (triangle){
+function drawTriangle (height){
     let triangl="";
-    for (let i=1; i<=triangle; i++) {
+    if (height == 0 || height < 0 || !Number.isInteger(height)) {
+        console.log("Height must be a positive number")
+    }
+    for (let i=1; i<=height; i++) {
         
         for (let j=1; j<=i; j++); {
        triangl += "$";
@@ -10,6 +13,6 @@ function drawTriangle (triangle){
     }   
  
 }
-drawTriangle(6);
+drawTriangle("dgheui");
 
 
